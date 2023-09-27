@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/styles/style.css" />
+    <title>Number Guessing Game</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div id="container">
+        <p id="guessText">Угадайте число от 1 до 100</p>
+        <div class="container__buttons">
+          <button class="button-1" id="btn1">СГЕНЕРИРУЙТЕ ЧИСЛО</button>
+          <button class="button-1" id="btn3" disabled>Начать сначала</button>
+        </div>
+        <p id="outputText"></p>
+        <input type="number" id="userInput" disabled />
+        <button class="button-2" id="btn2" disabled>Отправить</button>
+      </div>
+      <div id="container2">
+        <form oninput="result.value = slider.value">
+          <label>ВЫБЕРИТЕ ЖЕЛАЕМЫЙ ДИАПАЗОН</label><br />
+          <input
+            type="range"
+            id="slider"
+            min="1"
+            max="1000"
+            step="1"
+            value="100"
+          />
+          <br />
+          С 1 до <output name="result" for="slider">100</output>
+        </form>
+      </div>
+    </div>
+
+    <script src="./js/main.js"></script>
+  </body>
+</html>

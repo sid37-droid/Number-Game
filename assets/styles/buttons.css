@@ -1,0 +1,48 @@
+/* CSS */
+.container__buttons {
+   display: flex;
+   gap: 10px;
+}
+.button-1,
+.button-2 {
+   border-radius: 8px;
+   border-style: none;
+   box-sizing: border-box;
+   color: #ffffff;
+   cursor: pointer;
+   display: inline-block;
+   font-size: 16px;
+   font-weight: 500;
+   height: 40px;
+   line-height: 20px;
+   list-style: none;
+   margin: 0;
+   outline: none;
+   padding: 10px 16px;
+   position: relative;
+   text-align: center;
+   text-decoration: none;
+   transition: color 100ms;
+   vertical-align: baseline;
+   user-select: none;
+   -webkit-user-select: none;
+   touch-action: manipulation;
+}
+
+.button-1 {
+   background-color: #66bfbf;
+}
+
+.button-2 {
+   background-color: #f76b8a;
+}
+
+.button-1:hover,
+.button-1:focus {
+   background-color: #f082ac;
+}
+
+.button-1:disabled,
+.button-2:disabled {
+   background-color: #696969;
+}

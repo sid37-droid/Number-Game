@@ -1,0 +1,74 @@
+@import "./reset.css";
+@import "./inputRange.css";
+@import "./buttons.css";
+
+body {
+   background-color: #fcfefe;
+   font-family: "Times New Roman", Times, serif;
+   padding: 50px;
+   min-height: 100vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.wrapper {
+   max-width: 1200px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: 25px;
+}
+
+p,
+form {
+   color: #696969;
+   font-size: 20px;
+   font-weight: 400;
+}
+#container {
+   background-color: #eaf6f6;
+   border-radius: 5px;
+   border: 5px solid #66bfbf;
+   width: 550px;
+   padding: 20px;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   gap: 15px;
+   box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+}
+
+#container2 {
+   border-radius: 5px;
+   border: 5px solid #f76b8a;
+   box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+   padding: 20px;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   gap: 15px;
+}
+
+input[type="number"] {
+   background-color: #fcfefe;
+   border-top-left-radius: 5px;
+   border-top-right-radius: 5px;
+   border-bottom: 2px solid #66bfbf;
+   padding: 5px;
+   color: #696969;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+   -webkit-appearance: none;
+   margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+   -moz-appearance: textfield;
+}
